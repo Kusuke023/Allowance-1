@@ -1,0 +1,23 @@
+{
+  "name": "Allowance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noir416/Allowance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noir416/Allowance/issues"
+  },
+  "homepage": "https://github.com/Noir416/Allowance#readme",
+  "dependencies": {
+    "mongodb": "^3.6.3"
+  }
+}

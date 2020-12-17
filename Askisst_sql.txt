@@ -1,0 +1,5 @@
+use Askisst
+db.createCollection("job_details")
+db.createCollection("users")
+
+db.users.insertdb({name:"kusuke",email:"kd1258431@st.kobedenshi.ac.jp"})

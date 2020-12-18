@@ -1,155 +1,143 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>応募画面</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <meta name="viewport" content="width=1214, user-scalable=yes">
-    <link rel="stylesheet" href="css/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+    <meta name="viewport" content="width=1214, user-scalable=yes" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
+    <link rel="stylesheet" href="template.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+  </head>
 
-</head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-<body>
-
+  <body>
     <!--ヘッダー-->
-    <header class="navbar navbar-expand-lg Sticky top navbar-dark bg-dark">
-        <img src="img/13.png" alt="" class="rounded-circle" style="width: 50px; height: 50px;">
-        <a href="index.html" class="mr-auto navbar-brand nav-link">
-            <img src="img/Askisst.png" alt="" style="width:80px;">
-        </a>
-        <div class="pull-right">
-            <a href="signup.html" class="navbar-brand nav-link">
-                signup
-            </a>
-            <a href="signin.html" class="navbar-brand nav-link">
-                signin
-            </a>
-        </div>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img
+        src="img/13.png"
+        alt=""
+        class="rounded-circle"
+        style="width: 50px; height: 50px"
+      />
+      <a href="index.html" class="mr-auto navbar-brand nav-link">
+        <img src="img/Askisst.png" alt="" style="width: 80px" />
+      </a>
+      <div class="pull-right">
+        <a href="signup.html" class="navbar-brand nav-link"> signup </a>
+        <a href="signin.html" class="navbar-brand nav-link"> signin </a>
+      </div>
     </header>
 
-
     <!--キャッチフレーズ部-->
-    <div class="text-center">
-        <h1>依頼詳細</h1>
-        <h2>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</h2>
+    <div class="kyatti text-center">
+      <h1>依頼詳細</h1>
+      <h2>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</h2>
     </div>
     <!-- コンテンツ -->
-    <div class="d-flex align-items-stretch m-1 p-5">
-        <!-- 仕事 -->
-        <div class="my-3 col-auto flex-grow-1">
-            <div class="mb-3 p-3 bg-light shadow-sm rounded">
-                <p>
-                    仕事内容
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </p>
-            </div>
-            <!--ボタンのグループ化-->
-            <div class="btn-group-lg text-center">
-                <input type="submit" class="m-5 p-2 btn btn-primary" name="submit" value="応募する">
-                <input type="submit" class="m-5 p-2 btn btn-primary" name="submit" value="キャンセル">
-            </div>
+
+    <!-- 仕事 -->
+      <main class="main">
+        <div class="m-3 p-3 bg-light shadow-sm rounded">
+          <p>
+            仕事内容
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </p>
         </div>
-
-        <!-- 広告-->
-        <div class="my-3 col-3">
-            <div class="mb-3 p-3 bg-light shadow-sm rounded">
-                <p>
-                    広告
-                </p>
-            </div>
-            <div class="mb-3 p-3 bg-light shadow-sm rounded">
-                <p>
-                    広告
-                </p>
-            </div>
+        <!--ボタンのグループ化-->
+        <div class="btn-group-lg text-center">
+          <input
+            type="submit"
+            class="m-5 p-2 btn btn-primary"
+            name="submit"
+            value="応募する"
+          />
+          <input
+            type="submit"
+            class="m-5 p-2 btn btn-primary"
+            name="submit"
+            value="キャンセル"
+          />
         </div>
+      </main>
 
-    </div>
-
+      <!-- 広告-->
+      <aside class="">
+        <div class="m-3 p-3 bg-light shadow-sm rounded">
+          <p>広告</p>
+        </div>
+        <div class="m-3 p-3 bg-light shadow-sm rounded">
+          <p>広告</p>
+        </div>
+        <div class="m-3 p-3 bg-light shadow-sm rounded">
+          <p>広告</p>
+        </div>
+      </aside>
 
     <!--フッター-->
     <footer class="Sticky bottom text-white bg-dark">
-        <br>
-        <hr>
-        <div class="m-0 p-2 text-center">
-            <a href="inquiry.html" class="text-white col-auto">お問い合わせ</a>
-            <a href="#" class="text-white col-auto">広告掲載依頼</a>
-            <a href="kiyaku.html" class="text-white col-auto">利用規約</a>
-            <br>
-            <br>
-            <a href="pr.html" class="text-white col-auto">プライバシーポリシー</a>
-        </div>
-        <hr>
-        <div class="text-center">
-            <small class="text-center">
-                Copyright © 2020 Askisst All Rights Reserved.
-            </small>
-        </div>
+      <br />
+      <hr />
+      <div class="m-0 p-2 text-center">
+        <a href="inquiry.html" class="text-white col-auto">お問い合わせ</a>
+        <a href="#" class="text-white col-auto">広告掲載依頼</a>
+        <a href="kiyaku.html" class="text-white col-auto">利用規約</a>
+        <br />
+        <br />
+        <a href="pr.html" class="text-white col-auto">プライバシーポリシー</a>
+      </div>
+      <hr />
+      <div class="text-center mb-3">
+        <small>
+          Copyright © 2020 Askisst All Rights Reserved.
+        </small>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
 <style>
-    * {
-        margin: 0%;
-    }
+  * {
+    margin: 0%;
+  }
 
-    body {
-        background-color: #d0e0e3ff;
-    }
 
-    hr {
-        background-color: white;
-    }
+  div#contents {
+    width: 100%;
+    background: #ffffff;
+    margin: 0px auto;
+  }
 
-    div#contents {
-        width: 100%;
-        background: #FFFFFF;
-        margin: 0px auto;
-    }
+  div.jpg {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto 0px auto;
+    border-bottom: solid 1px #d8d8d8;
+    background: url() repeat-x;
+    background-origin: content-box;
+  }
 
-    div.jpg {
-        width: 100%;
-        padding: 0px;
-        margin: 0px auto 0px auto;
-        border-bottom: solid 1px #d8d8d8;
-        background: url() repeat-x;
-        background-origin: content-box;
-    }
+  div.slide {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto 0px auto;
+  }
 
-    div.slide {
-        width: 100%;
-        padding: 0px;
-        margin: 0px auto 0px auto;
-    }
+  .slick-slide {
+    margin: 0px 5px;
+    height: 514px;
+  }
 
-    .slick-slide {
-        margin: 0px 5px;
-        height: 514px;
-    }
-
-    p.tes {
-        width: 1024px;
-        margin: 0px auto;
-    }
+  p.tes {
+    width: 1024px;
+    margin: 0px auto;
+  }
 </style>

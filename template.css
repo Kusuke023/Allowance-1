@@ -1,0 +1,78 @@
+body {
+    /* font-size: 2rem; */
+    /* width: 800px; */
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #d0e0e3ff;
+    display: grid;
+    grid-template:
+        "...... ...... ...... ...... ...... ...... ......" 0px
+        "header header header header header header header" 80px
+        "...... ...... ...... ...... ...... ...... ......" 20px
+        "...... title  title  title  title  title  ......" auto
+        "...... ...... ...... ...... ...... ...... ......" 20px
+        "...... ...... ...... center ...... right  ......" 1fr
+        "...... ...... ...... ...... ...... ...... ......" 20px
+        "footer footer footer footer footer footer footer" auto
+        "...... ...... ...... ...... ...... ...... ......" 0px
+        / 50px 200px 20px 1fr 20px 200px 50px;
+}
+header {
+    grid-area: header;
+    /* background-color: red ; */
+}
+main {
+    grid-area: center;
+    /* background-color: blue ; */
+}
+div.kyatti{
+    grid-area: title;
+    /* background-color: #f814e5 ; */
+}
+nav {
+    grid-area: left;
+    /* background-color: yellow; */
+}
+aside {
+    grid-area: right;
+    /* background-color: green ; */
+}
+footer {
+    grid-area: footer;
+}
+hr {
+    background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        grid-template:
+            "header header header" 80px
+            "...... ...... ......" 20px
+            "...... title  ......" auto
+            "...... ...... ......" 20px
+            "...... center ......" auto
+            "...... left   ......"
+            "...... right  ......"
+            "...... ...... ......" 20px
+            "footer footer footer" auto
+            /auto auto auto;
+    }
+    main {
+        grid-area: center;
+        /* background-color: blue ; */
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        min-width: 400px;
+    }    
+    aside {
+        grid-area: right;
+        /* background-color: green ; */
+        /* display: none; */
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        min-width: 400px;
+    }
+}
